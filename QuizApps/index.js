@@ -57,31 +57,37 @@ const quizData = [
     }
 ]
 
-const currentQuiz = 0;
-
-const question = document.getElementById("question");
-
+const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const submitBtn = document.getElementById("submit");
+
+let currentQuiz = 0; 
+
+Quizload();
 
 function Quizload(){
-    const quizQuestion = quizData[currentQuiz];
-    question.innerHTML = quizQuestion.question;
-    a_text.innerHTML = quizQuestion.a;
-    b_text.innerHTML = quizQuestion.b;
-    c_text.innerHTML = quizQuestion.c;
-    d_text.innerHTML = quizQuestion.d;
-    currentQuiz++;
+
+    let currentQuizQuestion = quizData[currentQuiz];
+    questionEl.innerText = currentQuizQuestion.question;
+    a_text.innerText = currentQuizQuestion.a;
+    b_text.innerText = currentQuizQuestion.b;
+    c_text.innerText = currentQuizQuestion.c;
+    d_text.innerText = currentQuizQuestion.d;
 }
 
-function Quizrun(){
-    if(currentQuiz==0){
-   for (var i =0 ; i<quizData.length; i++){
-       Quizload();
-   }}
-   else{
-       alert('Your Quiz has finished');
-   }
-}
+
+submitBtn.addEventListener('click',()=>{
+    
+    if(currentQuiz<quizData.length){
+    Quizload();
+    currentQuiz++;
+    }
+    else{
+        alert('Quiz HAs Been finished');
+        currentQuiz =0;
+        Quizload();
+    }
+})

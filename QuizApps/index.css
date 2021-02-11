@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
 
 
 body{
@@ -31,8 +31,12 @@ ul{
 ul li {
     padding: 0.8rem;
 }
+ul li label{
+    cursor: pointer;
+}
 h2{
     text-align: center;
+    font-weight: bold
 }
 
 button{
@@ -44,11 +48,15 @@ button{
     background-color: #74b9ff;
     color: white;
     border: none;
+    cursor: pointer;
 }
 button:hover{
     background-color: #59abfd;
 }
-
+button:focus{
+    background-color: #59abfd;
+    outline: none;
+}
 
 @media only screen and (max-width: 600px) {
     .quiz-container {

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Job Search</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./img/logo.png" style="width: 100px" alt="" />
+        </div>
+        <span>CleverJobs</span>
+      </div>
+    </header>
+
+    <div class="search">
+      <div class="search-container">
+        <div class="input-container">
+          <i class="fa fa-search"></i>
+          <input
+            type="text"
+            id="filter-jobs"
+            name="filter-jobs"
+            placeholder="Filter by Title"
+          />
+        </div>
+        <div class="button-container">
+          <span>Find Job</span>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="jobs-list">
+        <h1>Showing &nbsp;"<span id="numberOfJobs"></span>&nbsp;" Jobs</h1>
+        <div class="jobs-container">
+          
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

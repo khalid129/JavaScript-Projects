@@ -1,0 +1,29 @@
+<!-- <div class="job-tile">
+            <div class="top">
+              <img src="./img/img1.png" alt="" />
+              <span class="material-icons more_horiz">more_horiz</span>
+            </div>
+            <div class="rolename">
+              <span>Digital Transformation</span>
+            </div>
+            <div class="description">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt illum delectus atque quidem molestiae fugit magni vero
+                quam natus dolor! Quaerat, velit quos voluptate laborum illum
+                vel id odio numquam?
+              </span>
+            </div>
+            <div class="buttons">
+              <div class="button apply-now">Apply Now</div>
+              <div class="button">Message</div>
+            </div>
+          </div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div>
+          <div class="job-tile">One Job is Here</div> -->
